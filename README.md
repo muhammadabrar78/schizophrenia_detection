@@ -1,3 +1,57 @@
-Enhanced Schizophrenia Detection Using Multichannel EEG and CAOA-RST-Based Feature Selection
+# Schizophrenia EEG Detection Pipeline
 
-Schizophrenia is a mental disorder characterized by hallucinations, delusions, disorganized thinking and behavior, and inappropriate affect. Early and accurate diagnosis of schizophrenia remains a challenge due to the disorder's complex nature and the limitations of state-of-the-art techniques. It is evident from the literature that Electroencephalogram (EEG) signals provide valuable insights into brain activity, but their high dimensionality and complexity pose remains a key challenge. Thus, our research introduces a novel approach by integrating the multichannel EGG, Crossover-Boosted Archimedes Optimization Algorithm (CAOA), and Rough Set Theory (RST) for schizophrenia detection. It is a four-stage model. In the first stage, Raw EGG data is collected. The data is passed to the next stage named data preprocessing. This is used for artifact removal, band-pass filtering, and data normalization. The preprocessed data passed to the next stage. In the feature extraction stage, feature selection is performed using CAOA. In addition, the classification is performed using a Support Vector Machine (SVM), MEMF, and finally, the classification is performed using entropy. The data interpretation stage displays the results to the end user using the data interpretation stage. We have performed the experimentation and tested our proposed model using real EEG datasets. The simulation results prove that the proposed model achieved an average accuracy of 94.9%, sensitivity of 93.9%, specificity of 96.4%, and precision of 92.7%. Thus, our proposed model demonstrates significant improvements over state-of-the-art methods. In addition, the integration of CAOA and RST effectively addresses the challenges of high-dimensional EEG data, helps in optimizing the feature selection process, and also increases accuracy. In future work, we suggest incorporating large-size datasets that include more diverse patient groups and refining the model with advanced machine-learning models and techniques. 
+This repository provides a complete pipeline for schizophrenia detection using multichannel EEG, following the methodology described in:
+
+> **"Enhanced Schizophrenia Detection Using Multichannel EEG and CAOA-RST-Based Feature Selection"**
+
+## Features
+
+- EEG feature preprocessing and normalization
+- Feature extraction using EMD and entropy measures
+- Advanced feature selection with CAOA-RST (Crossover-Boosted Archimedes Optimization Algorithm and Rough Set Theory)
+- SVM-based classification
+
+## Folder Structure
+
+```
+data/
+├── features_raw.csv
+├── labels.csv
+
+preprocessing.py
+feature_extraction.py
+feature_selection.py
+model.py
+main.py
+requirements.txt
+README.md
+```
+
+## Usage
+
+1. **Prepare your data**  
+   Place `features_raw.csv` and `labels.csv` in the `data/` folder.
+
+2. **Install requirements**  
+   ```
+   pip install -r requirements.txt
+   ```
+
+3. **Run the pipeline**  
+   ```
+   python main.py
+   ```
+
+## Reference
+
+If you use this code, please cite our paper:
+
+> **"Enhanced Schizophrenia Detection Using Multichannel EEG and CAOA-RST-Based Feature Selection"**
+
+## Contact
+
+For questions or issues, please open an issue on GitHub or contact the corresponding author.
+
+---
+
+**Ready for research, academic, and clinical machine learning projects.**
